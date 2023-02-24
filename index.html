@@ -5,15 +5,98 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bootstrap demo</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="/e-com web/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.css" rel="stylesheet" />
+  <!-- icone -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-  <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    .hover:hover {
+      color: rgb(248, 188, 188) !important;
+      cursor: pointer;
+      transition: 0.4s;
+    }
+
+    .color1 {
+      background-color:
+        #fdfdfd;
+    }
+
+    #cl {
+      color: black !important;
+    }
+
+    .sign-btn {
+      background-color: #6e6c3c;
+      transition: 0.5s;
+      cursor: pointer;
+      width: 100%;
+
+    }
+
+    .sign-btn:hover {
+      background-color: black;
+      color: white;
+    }
+
+    .b-img {
+      background-image: url(assets/media/images/5.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      object-fit: cover;
+    }
+
+    .btn11 {
+      background-color: #6e6c3c;
+      transition: 0.5s;
+      cursor: pointer;
+    }
+
+    .btn11:hover {
+      background-color: black;
+      color: white;
+    }
+
+    .input11 {
+      border: none;
+      outline: none;
+    }
+
+    .colork {
+      color: #6e6c3c;
+    }
+
+    #hero1 {
+      background: url(assets/media/images/shoose22.jpg);
+      background-size: cover;
+      background-position: center center;
+      background-attachment: fixed;
+    }
+
+    .hero,
+    .content {
+      text-align: center;
+      position: relative;
+      width: 100%;
+
+    }
+
+    .inner {
+      min-height: 600px;
+      position: relative;
+    }
+  </style>
 </head>
 
 <body>
+
   <div class="container-fluid">
     <!-- black patti -->
     <div class="row bg-black linehight">
@@ -37,6 +120,9 @@
     <!-- navbar -->
     <div class="row color1 position-sticky fixed-top shadow-sm">
       <div class="col  d-lg-none d-xl-none d-flex justify-content-center align-items-center">
+        <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+          <i id="cl" class="bi bi-list"></i>
+        </a>
         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
           aria-labelledby="offcanvasExampleLabel">
           <div class="offcanvas-header">
@@ -130,7 +216,7 @@
             <ul class="desktop-menu-category-list">
 
               <li class="menu-category">
-                <a href="/e-com web/e-commarce.html" class="menu-title">Home</a>
+                <a href="#" class="menu-title">Home</a>
               </li>
 
               <li class="menu-category">
@@ -166,7 +252,7 @@
 
                     <li class="panel-list-item">
                       <a href="#">
-                        <img src="/e-com web/images/1.jpg" alt="headphone collection" width="250" height="119">
+                        <img src="assets/media/images/1.jpg" alt="headphone collection" width="250" height="119">
                       </a>
                     </li>
 
@@ -200,7 +286,7 @@
 
                     <li class="panel-list-item">
                       <a href="#">
-                        <img src="/e-com web/images/2.jpg" alt="men's fashion" width="250" heighJEWELRYt="119">
+                        <img src="assets/media/images/2.jpg" alt="men's fashion" width="250" height="119">
                       </a>
                     </li>
 
@@ -234,7 +320,7 @@
 
                     <li class="panel-list-item">
                       <a href="#">
-                        <img src="/e-com web/images/3.jpg" alt="women's fashion" width="250" height="119">
+                        <img src="assets/media/images/3.jpg" alt="women's fashion" width="250" height="119">
                       </a>
                     </li>
 
@@ -268,7 +354,7 @@
 
                     <li class="panel-list-item">
                       <a href="#">
-                        <img src="/e-com web/images/4.jpg">
+                        <img src="assets/media/images/4.jpg">
                       </a>
                     </li>
 
@@ -326,7 +412,7 @@
               </li>
 
               <li class="menu-category">
-                <a href="#" class="menu-title">Jewelry</a>
+                <a href="assets/parmlink/product page.html" class="menu-title">Product</a>
 
                 <ul class="dropdown-list">
 
@@ -388,10 +474,10 @@
           </lord-icon>
           <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="count" >
            0
+            
           </span>
         </button>
-        
-        <lord-icon src="https://cdn.lordicon.com/medpcfcy.json" trigger="hover" class="m-2 d-none d-lg-none  "
+        <lord-icon src="https://cdn.lordicon.com/medpcfcy.json" trigger="hover" class="m-2 d-none d-lg-none d-  "
           style="width:30;height:30">
         </lord-icon>
       </div>
@@ -427,164 +513,393 @@
         </div>
       </div>
     </div>
-    
-  </div>
-  <!-- down part -->
-  <div class="row">
-    <div
-      class="col-12 col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center flex-column align-items-center p-5 ">
-      <div class="show" href="1.jpg">
-        <img
-          src="https://cdn.shopify.com/s/files/1/0054/0567/1479/products/3_c317bf1f-881c-4a14-9fe1-1d1340db796d.png?v=1605252646"
-          id="show-img">
-      </div>
-      <div class="small-img d-flex">
-        <img src="images/next-icon.png" class="icon-left" alt="" id="prev-img">
-        <div class="small-container d-flex justify-content-center align-items-center">
-          
-            <img
-              src="https://cdn.shopify.com/s/files/1/0054/0567/1479/products/3_c317bf1f-881c-4a14-9fe1-1d1340db796d.png?v=1605252646"
-              class="show-small-img" alt="">
-            <img
-              src="https://cdn.shopify.com/s/files/1/0054/0567/1479/products/4_b77ffde1-a4fe-4ec5-8cba-ae4ae9d1e503_550x.png?v=1605252646"
-              class="show-small-img" alt="">
-            <img
-              src="https://cdn.shopify.com/s/files/1/0054/0567/1479/products/5_b91eb3f5-deeb-4322-b9b3-579d8acf5aa1_550x.png?v=1605252646"
-              class="show-small-img" alt="">
-            <img
-              src="https://cdn.shopify.com/s/files/1/0054/0567/1479/products/6_39c4083e-9c8c-44d0-97c9-0f0538ca81af_550x.png?v=1605252646"
-              class="show-small-img " alt="">
-          
+
+<div class="container-fluid">
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="margin-left: -20px; margin-right: -20px; overflow: hidden;">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://cdn.shopify.com/s/files/1/0054/0567/1479/files/slider2_67a71704-1fbe-4ce4-99bc-3135d95a446f.png?v=1614320343" class="d-block w-100" alt="...">
+        <div class="carousel-caption  d-md-block" id="c1">
+          <h5 class="slider-heading1">T-Shirt</h5>
+          <h2 class="slider-heading2">Man's <br><span style="color: black;">Fashion!</span></h2>
+          <h5>500+ Deals on Yashvee and Nevils showroom</h5>
+          <button type="button" class="btn btn-primary mt-3 slider_btn" class="">Shop Now</button>
+
         </div>
-        <img src="images/next-icon.png" class="icon-right" alt="" id="next-img">
+      </div>
+      <div class="carousel-item">
+        <img src="https://cdn.shopify.com/s/files/1/0054/0567/1479/files/slider1_895b4217-1e05-4a42-abbe-ec7a38db855d.png?v=1614320343" class="d-block w-100" alt="...">
+        <div class="carousel-caption2  d-md-block" id="c1">
+          <h5 class="slider-heading1">Spring</h5>
+          <h2 class="slider-heading2">Trandy <br><span style="color: black;">Fashion!</span></h2>
+          <h5>500+ Deals on Yashvee and Nevils showroom</h5>
+          <button type="button" class="btn btn-primary mt-3 slider_btn" class="">Shop Now</button>
+
+        </div>
+      </div>
+      <!-- <div class="carousel-item">
+        <img src="https://cdn.shopify.com/s/files/1/0054/0567/1479/files/slider1_895b4217-1e05-4a42-abbe-ec7a38db855d.png?v=1614320343" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Second slide label</h3>
+          <p>Some representative placeholder content for the second slide.</p>
+          <h5>500+ Deals on Yashvee and Nevils showroom</h5>
+        </div>
+      </div> -->
+     
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</div>
+    <!-- black image -->
+
+    <div class="row b-img p-4 pt-5 pb-5">
+      <p class="h5 fst-italic fw-bold  d-flex justify-content-center text-white">CONNECT TO AVEDA & CO.</p>
+      <p class="h1 d-flex justify-content-center text-white">Join Our Newsletter</p>
+      <p class="h6 text-center text-white">Hey you, sign up it only takes a second to be the first to find out about our
+        latest news and <br> promotions…</p>
+      <div class="row bg-white  p-1 rounded-pill ms-auto me-auto " style="width: 600px;">
+        <div class="col d-flex align-items-center ">
+          <input type="text" name="" id="" placeholder="E-mail" class="input11  ">
+        </div>
+        <div class="col p-0  ">
+          <button class="btn11 p-2 ps-4 pe-4 rounded-pill float-end">SUBSCRIBE</button>
+        </div>
       </div>
     </div>
-    <div class="col-12 col-lg-6 col-md-6 col-sm-12 ">
-      <div class="n p-2 p-lg-5 p-md-5">
-      <p class="h2 fontf">Charming Linen Saree With Ikkat <br> Self Weaving Concept</p>
-      <h5 class="margggin_shop"><del class="me-1" style="color: #cccccc;">₹3,999.00</del><b class="fs-4">
-          ₹2,499.00</b></h5>
-      <li class="fs-5">This saree comes with a similar color blouse made with <br> brocade.</li>
-      <li class="fs-5">This attractive georgette saree is 5.50 meters long and comes <br> with fully unstitched blouse
-        material.</li>
-      <li class="fs-5">Saree has been around for centuries but now comes in various <br> styles to suit your every mood.
-        Be amazed by sporting this <br> amazing saree at weddings, functions like sangeet, <br> engagements, or any
-        celebrations.</li>
-      </div>
-      <div class="row ">
-        <div class="col border border-dark border-2 rounded-pill d-flex justify-content-center align-items-center m-3">
-          <div class="col">
-            <p class="h2 text-center decrement-btn btn0 ">-</p>
-          </div>
-          <div class="col">
-            <input type="text" class=" quantity-input" value="0">
-          </div>
-          <div class="col">
-            <p class="h2 text-center increment-btn btn0">+</p>
-          </div>
-        </div>
-        <div class="col  d-flex justify-content-start align-items-center fle">
-          <button class="add-to-cart-btn p-2 rounded-pill ps-4 pe-4">Add to cart</button>
-        </div>
-      </div>
-      <hr>
-      <p class="h6 text-muted fontf">SKU: LV01</p>
-      <p class="h6 text-muted fontf">CATEGORY: Saree</p>
-      <p class="h6 text-muted fontf">TAGS: Fantastic Saree, Lady Vastr, Lady Vastra Saree, Linen Saree, Saree</p>
-      <button class="paypal rounded-pill p-2 ps-4 pe-4 ms-auto me-auto mt-3" ><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PayPal.svg/124px-PayPal.svg.png?20210313113929" alt="" width="100px" class="ms-auto me-auto"></button>
-      <br><br><br> <br><br><br>
-    </div>
   </div>
-  <style>
-    .fontf {
-      font-family: Arial, Helvetica, sans-serif;
-    }
+  <!-- shoose image -->
 
-    .btn0 {
-      cursor: pointer;
-      user-select: none;
-    }
 
-    .btn0:hover {
-      opacity: 75%;
-    }
+<div class="container-fluid p-0">
+  <section id="hero1" class="hero">
+    <div class="inner d-flex justify-content-center align-items-center ">
+      <div class="copy ">
+        <div class="col p-5 shadow-sm rounded" style=" background-color: #f5f1ebaf;">
 
-    .quantity-input {
-      width: 100%;
-      text-align: center;
-      border: none;
-      outline: none;
-      user-select: none;
-    }
+          <p class="h3 colork fw-light">For The Best</p>
+          <p class="h1 text-dark fs-1">Discount Sale</p>
+          <p class="h5 colork text-muted fw-bold">The Big Offer Day Extra 10% Off</p>
+          <p class="h6 text-muted">Offer only 5 days!</p>
+          <div class="col ms-auto me-auto" style="width: 200px;">
+            <button class="sign-btn text-white rounded-pill p-2">VIEW COLLECTION</button>
+          </div>
+        </div>
 
-    .add-to-cart-btn {
-      background-color: black;
-      cursor: pointer;
-      transition: 0.4s;
-      color: white;
+      </div>
+    </div>
+  </section>
+  <!-- new part -->
+  <footer>
 
-    }
+    <div class="footer-category">
 
-    .add-to-cart-btn:hover {
-      opacity: 70%;
-    }
-  
-    .paypal{
-      background-color: #FFC439;
-    color: black;
-    text-align: center;
-    width: 300px;
-    border-radius: 100px;
-    border: none;
-    
-}
-.paypal:hover{
-  opacity: 80%;
-}
-  </style>
+      <div class="container">
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
-    crossorigin="anonymous"></script>
-  <script src="scripts/zoom-image.js"></script>
-  <script src="scripts/main.js"></script>
-  <script>
-    // Get all the necessary elements
-    const decrementBtn = document.querySelector('.decrement-btn');
-    const incrementBtn = document.querySelector('.increment-btn');
-    const quantityInput = document.querySelector('.quantity-input');
-    const addToCartBtn = document.querySelector('.add-to-cart-btn');
+        <h2 class="footer-category-title">Brand directory</h2>
 
-    // Add event listeners to the buttons
-    decrementBtn.addEventListener('click', decrement);
-    incrementBtn.addEventListener('click', increment);
-    addToCartBtn.addEventListener('click', addToCart);
+        <div class="footer-category-box">
 
-    // Functions for incrementing and decrementing the quantity
-    function decrement() {
-      if (quantityInput.value > 0) {
-        quantityInput.value--;
-      }
-    }
+          <h3 class="category-box-title">Fashion :</h3>
 
-    function increment() {
-      quantityInput.value++;
-    }
+          <a href="#" class="footer-category-link">T-shirt</a>
+          <a href="#" class="footer-category-link">Shirts</a>
+          <a href="#" class="footer-category-link">shorts & jeans</a>
+          <a href="#" class="footer-category-link">jacket</a>
+          <a href="#" class="footer-category-link">dress & frock</a>
+          <a href="#" class="footer-category-link">innerwear</a>
+          <a href="#" class="footer-category-link">hosiery</a>
 
-    // Function for adding the product to the cart
-    function addToCart() {
+        </div>
 
-      const quantity = parseInt(quantityInput.value);
+        <div class="footer-category-box">
+          <h3 class="category-box-title">footwear :</h3>
 
-      // Here you can write the code to add the product to the cart
-      console.log(`Added ${quantity} to the cart`);
-      document.querySelector("#count").innerHTML = quantity
-    }
+          <a href="#" class="footer-category-link">sport</a>
+          <a href="#" class="footer-category-link">formal</a>
+          <a href="#" class="footer-category-link">Boots</a>
+          <a href="#" class="footer-category-link">casual</a>
+          <a href="#" class="footer-category-link">cowboy shoes</a>
+          <a href="#" class="footer-category-link">safety shoes</a>
+          <a href="#" class="footer-category-link">Party wear shoes</a>
+          <a href="#" class="footer-category-link">Branded</a>
+          <a href="#" class="footer-category-link">Firstcopy</a>
+          <a href="#" class="footer-category-link">Long shoes</a>
+        </div>
 
-  </script>
+        <div class="footer-category-box">
+          <h3 class="category-box-title">jewellery :</h3>
+
+          <a href="#" class="footer-category-link">Necklace</a>
+          <a href="#" class="footer-category-link">Earrings</a>
+          <a href="#" class="footer-category-link">Couple rings</a>
+          <a href="#" class="footer-category-link">Pendants</a>
+          <a href="#" class="footer-category-link">Crystal</a>
+          <a href="#" class="footer-category-link">Bangles</a>
+          <a href="#" class="footer-category-link">bracelets</a>
+          <a href="#" class="footer-category-link">nosepin</a>
+          <a href="#" class="footer-category-link">chain</a>
+          <a href="#" class="footer-category-link">Earrings</a>
+          <a href="#" class="footer-category-link">Couple rings</a>
+        </div>
+
+        <div class="footer-category-box">
+          <h3 class="category-box-title">cosmetics :</h3>
+
+          <a href="#" class="footer-category-link">Shampoo</a>
+          <a href="#" class="footer-category-link">Bodywash</a>
+          <a href="#" class="footer-category-link">Facewash</a>
+          <a href="#" class="footer-category-link">makeup kit</a>
+          <a href="#" class="footer-category-link">liner</a>
+          <a href="#" class="footer-category-link">lipstick</a>
+          <a href="#" class="footer-category-link">prefume</a>
+          <a href="#" class="footer-category-link">Body soap</a>
+          <a href="#" class="footer-category-link">scrub</a>
+          <a href="#" class="footer-category-link">hair gel</a>
+          <a href="#" class="footer-category-link">hair colors</a>
+          <a href="#" class="footer-category-link">hair dye</a>
+          <a href="#" class="footer-category-link">sunscreen</a>
+          <a href="#" class="footer-category-link">skin loson</a>
+          <a href="#" class="footer-category-link">liner</a>
+          <a href="#" class="footer-category-link">lipstick</a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="footer-nav">
+
+      <div class="container">
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Popular Categories</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Fashion</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Electronic</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Cosmetic</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Health</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Watches</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Products</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Prices drop</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">New products</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Best sales</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Contact us</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Sitemap</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Our Company</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Delivery</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Legal Notice</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Terms and conditions</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">About us</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Secure payment</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Services</h2>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Prices drop</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">New products</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Best sales</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Contact us</a>
+          </li>
+
+          <li class="footer-nav-item">
+            <a href="#" class="footer-nav-link">Sitemap</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Contact</h2>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <address class="content">
+              419 State 414 Rte
+              Beaver Dams, New York(NY), 14812, USA
+            </address>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="call-outline"></ion-icon>
+            </div>
+
+            <a href="tel:+607936-8058" class="footer-nav-link">(607) 936-8058</a>
+          </li>
+
+          <li class="footer-nav-item flex">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <a href="mailto:example@gmail.com" class="footer-nav-link">example@gmail.com</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-nav-list">
+
+          <li class="footer-nav-item">
+            <h2 class="nav-title">Follow Us</h2>
+          </li>
+
+          <li>
+            <ul class="social-link">
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+
+              <li class="footer-nav-item">
+                <a href="#" class="footer-nav-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+
+            </ul>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+      <div class="container">
+
+        <img src="images/payment.png" alt="payment method" class="payment-img">
+
+        <p class="copyright">
+          Copyright &copy; <a href="#">Avada</a> all rights reserved.
+        </p>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+</div>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    </script>
+  <!-- ------- -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"></script>
+  <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
 </body>
 
 </html>

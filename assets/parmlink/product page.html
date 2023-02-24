@@ -1,0 +1,591 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/style2.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <!-- black patti -->
+    <div class="row bg-black linehight">
+      <div class="col  d-none col-sm-6 col-md-6 col-lg-4  d-md-inline-block d-sm-inline-block text-center p-2">
+        <i class="bi bi-facebook text-white m-2  hover "></i>
+        <i class="bi bi-instagram text-white m-2 hover "></i>
+        <i class="bi bi-tiktok text-white m-2  hover"></i>
+        <i class="bi bi-snapchat text-white m-2  hover"></i>
+      </div>
+      <div class="col col-lg-4 
+             d-none d-lg-inline d-xl-inline-block ">
+        <p class="h6 text-white d-flex justify-content-center m-2 ">Welcome To Our Aveda Fashion Store !</p>
+      </div>
+      <div class="col   
+             text-white d-flex justify-content-center">
+        <p class="h6 m-2 ">Wishlist</p>
+        <p class="h6 m-2 ">Contact</p>
+      </div>
+
+    </div>
+    <!-- navbar -->
+    <div class="row color1 position-sticky fixed-top shadow-sm">
+      <div class="col  d-lg-none d-xl-none d-flex justify-content-center align-items-center">
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+          aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                  Fashion
+                </button>
+              </h2>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <a class="dropdown-item" href="#">Men</a>
+                  <a class="dropdown-item" href="#">Women</a>
+                  <a class="dropdown-item" href="#">Kids</a>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                  Category
+                </button>
+              </h2>
+              <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body"> <a class="dropdown-item" href="#">Kids</a></div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                  Included Pages
+                </button>
+              </h2>
+              <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                  <a class="dropdown-item" href="#">Wishlist</a>
+                  <a class="dropdown-item" href="#">Blog</a>
+                  <a class="dropdown-item" href="#">404</a>
+                  <a class="dropdown-item" href="#">Colletion</a>
+                  <a class="dropdown-item" href="#">Contact</a>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2>
+                <button class="accordion-button collapsed">
+                  About Us
+                </button>
+              </h2>
+
+            </div>
+            <div class="accordion-item">
+              <h2>
+                <button class="accordion-button collapsed">
+                  FAQs
+                </button>
+              </h2>
+
+            </div>
+          </div>
+
+        </div>
+
+        <lord-icon src="https://cdn.lordicon.com/xfftupfv.json" class="m-2 " trigger="hover"
+          style="width: 30;;height: 30;">
+        </lord-icon>
+
+      </div>
+      <div class="col  d-flex p-3 justify-content-center align-items-center">
+        <p class="h2 fw-bold text-dark mt-3">Aveda</p>
+        <p class="h2 text-muted">.</p>
+      </div>
+      <div
+        class="col d-none col-lg-6  d-lg-flex d-xl-flex d-md-none  d-flex justify-content-center align-items-center pt-3">
+
+
+        <nav class="desktop-navigation-menu">
+
+          <div class="container bg-white">
+
+            <ul class="desktop-menu-category-list">
+
+              <li class="menu-category">
+                <a href="/index.html" class="menu-title">Home</a>
+              </li>
+
+              <li class="menu-category">
+                <a href="#" class="menu-title">Categories</a>
+
+                <div class="dropdown-panel">
+
+                  <ul class="dropdown-panel-list">
+
+                    <li class="menu-title">
+                      <a href="#">Electronics</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">Desktop</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">Laptop</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">Camera</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">Tablet</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">Headphone</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">
+                        <img src="/assets/media/images/1.jpg" alt="headphone collection" width="250" height="119">
+                      </a>
+                    </li>
+
+                  </ul>
+
+                  <ul class="dropdown-panel-list">
+
+                    <li class="menu-title">
+                      <a href="#">Men's</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">Formal</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">Casual</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">Sports</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">Jacket</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">Sunglasses</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">
+                        <img src="/assets/media/images/2.jpg" alt="men's fashion" width="250" heighJEWELRYt="119">
+                      </a>
+                    </li>
+
+                  </ul>
+
+                  <ul class="dropdown-panel-list">
+
+                    <li class="menu-title">
+                      <a href="#">Women's</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">Formal</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">Casual</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">Perfume</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">Cosmetics</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">Bags</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">
+                        <img src="/assets/media/images/3.jpg" alt="women's fashion" width="250" height="119">
+                      </a>
+                    </li>
+
+                  </ul>
+
+                  <ul class="dropdown-panel-list">
+
+                    <li class="menu-title">
+                      <a href="#">Electronics</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">Watch</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">Smart TV</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">Keyboard</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">Mouse</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">Microphone</a>
+                    </li>
+
+                    <li class="panel-list-item">
+                      <a href="#">
+                        <img src="/assets/media/images/4.jpg">
+                      </a>
+                    </li>
+
+                  </ul>
+
+                </div>
+              </li>
+
+              <li class="menu-category">
+                <a href="#" class="menu-title">Men's</a>
+
+                <ul class="dropdown-list">
+
+                  <li class="dropdown-item">
+                    <a href="#">Shirt</a>
+                  </li>
+
+                  <li class="dropdown-item">
+                    <a href="#">Shorts & Jeans</a>
+                  </li>
+
+                  <li class="dropdown-item">
+                    <a href="#">Safety Shoes</a>
+                  </li>
+
+                  <li class="dropdown-item">
+                    <a href="#">Wallet</a>
+                  </li>
+
+                </ul>
+              </li>
+
+              <li class="menu-category">
+                <a href="#" class="menu-title">Women's</a>
+
+                <ul class="dropdown-list">
+
+                  <li class="dropdown-item">
+                    <a href="#">Dress & Frock</a>
+                  </li>
+
+                  <li class="dropdown-item">
+                    <a href="#">Earrings</a>
+                  </li>
+
+                  <li class="dropdown-item">
+                    <a href="#">Necklace</a>
+                  </li>
+
+                  <li class="dropdown-item">
+                    <a href="#">Makeup Kit</a>
+                  </li>
+
+                </ul>
+              </li>
+
+              <li class="menu-category">
+                <a href="#" class="menu-title">Jewelry</a>
+
+                <ul class="dropdown-list">
+
+                  <li class="dropdown-item">
+                    <a href="#">Earrings</a>
+                  </li>
+
+                  <li class="dropdown-item">
+                    <a href="#">Couple Rings</a>
+                  </li>
+
+                  <li class="dropdown-item">
+                    <a href="#">Necklace</a>
+                  </li>
+
+                  <li class="dropdown-item">
+                    <a href="#">Bracelets</a>
+                  </li>
+
+                </ul>
+              </li>
+
+
+
+              <div class="header-top-actions">
+
+                <select name="currency">
+
+                  <option value="usd">USD &dollar;</option>
+                  <option value="eur">EUR &euro;</option>
+
+                </select>
+
+
+              </div>
+            </ul>
+
+          </div>
+
+        </nav>
+
+
+
+      </div>
+      <div class="col  d-flex justify-content-center align-items-center">
+
+        <lord-icon src="https://cdn.lordicon.com/xfftupfv.json" class="m-2 d-none d-lg-flex" trigger="hover"
+          style="width: 30;;height: 30;">
+        </lord-icon>
+
+
+        <a href="" data-mdb-toggle="modal" data-mdb-target="#staticBackdrop">
+          <lord-icon src="https://cdn.lordicon.com/bhfjfgqz.json" class="m-2 mt-3" trigger="hover"
+            style="width: 30;;height: 30;">
+          </lord-icon>
+        </a>
+        <button type="button" class=" position-relative">
+          <lord-icon src="https://cdn.lordicon.com/hyhnpiza.json" class="m-2" trigger="hover" style="width:30;height:30">
+          </lord-icon>
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="count" >
+           0
+          </span>
+        </button>
+        
+        <lord-icon src="https://cdn.lordicon.com/medpcfcy.json" trigger="hover" class="m-2 d-none d-lg-none  "
+          style="width:30;height:30">
+        </lord-icon>
+      </div>
+    </div>
+    <div class="modal fade" id="staticBackdrop" data-mdb-backdrop="static" data-mdb-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <p class="h3 ">Login</p>
+            <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div
+              class="row ps-lg-5 ps-md-4 ps-sm-3 ps-sm-2 ps-1  pe-lg-5 ps-md-4 pe-sm-3 pe-sm-2 pe- d-flex flex-column">
+              <div class="col">
+                <form action="">
+                  <input type="text" placeholder="E-mail" class="rounded-pill ps-2 m-2 p-1">
+                  <input type="text" placeholder="Password" class="rounded-pill ps-2 m-2 p-1">
+                </form>
+              </div>
+
+              <div class="col">
+                <p class="fs-6 text-muted float-end">Forgot your password?</p>
+              </div>
+              <div class="col">
+                <button class="sign-btn rounded-pill p-2">Sign Up</button>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <!-- down part -->
+  <div class="row">
+    <div
+      class="col-12 col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center flex-column align-items-center p-5 ">
+      <div class="show" href="1.jpg">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0054/0567/1479/products/3_c317bf1f-881c-4a14-9fe1-1d1340db796d.png?v=1605252646"
+          id="show-img">
+      </div>
+      <div class="small-img d-flex">
+        <img src="images/next-icon.png" class="icon-left" alt="" id="prev-img">
+        <div class="small-container d-flex justify-content-center align-items-center">
+          
+            <img
+              src="https://cdn.shopify.com/s/files/1/0054/0567/1479/products/3_c317bf1f-881c-4a14-9fe1-1d1340db796d.png?v=1605252646"
+              class="show-small-img" alt="">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0054/0567/1479/products/4_b77ffde1-a4fe-4ec5-8cba-ae4ae9d1e503_550x.png?v=1605252646"
+              class="show-small-img" alt="">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0054/0567/1479/products/5_b91eb3f5-deeb-4322-b9b3-579d8acf5aa1_550x.png?v=1605252646"
+              class="show-small-img" alt="">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0054/0567/1479/products/6_39c4083e-9c8c-44d0-97c9-0f0538ca81af_550x.png?v=1605252646"
+              class="show-small-img " alt="">
+          
+        </div>
+        <img src="images/next-icon.png" class="icon-right" alt="" id="next-img">
+      </div>
+    </div>
+    <div class="col-12 col-lg-6 col-md-6 col-sm-12 ">
+      <div class="n p-2 p-lg-5 p-md-5">
+      <p class="h2 fontf">Charming Linen Saree With Ikkat <br> Self Weaving Concept</p>
+      <h5 class="margggin_shop"><del class="me-1" style="color: #cccccc;">₹3,999.00</del><b class="fs-4">
+          ₹2,499.00</b></h5>
+      <li class="fs-5">This saree comes with a similar color blouse made with <br> brocade.</li>
+      <li class="fs-5">This attractive georgette saree is 5.50 meters long and comes <br> with fully unstitched blouse
+        material.</li>
+      <li class="fs-5">Saree has been around for centuries but now comes in various <br> styles to suit your every mood.
+        Be amazed by sporting this <br> amazing saree at weddings, functions like sangeet, <br> engagements, or any
+        celebrations.</li>
+      </div>
+      <div class="row ">
+        <div class="col border border-dark border-2 rounded-pill d-flex justify-content-center align-items-center m-3">
+          <div class="col">
+            <p class="h2 text-center decrement-btn btn0 ">-</p>
+          </div>
+          <div class="col">
+            <input type="text" class=" quantity-input" value="0">
+          </div>
+          <div class="col">
+            <p class="h2 text-center increment-btn btn0">+</p>
+          </div>
+        </div>
+        <div class="col  d-flex justify-content-start align-items-center fle">
+          <button class="add-to-cart-btn p-2 rounded-pill ps-4 pe-4">Add to cart</button>
+        </div>
+      </div>
+      <hr>
+      <p class="h6 text-muted fontf">SKU: LV01</p>
+      <p class="h6 text-muted fontf">CATEGORY: Saree</p>
+      <p class="h6 text-muted fontf">TAGS: Fantastic Saree, Lady Vastr, Lady Vastra Saree, Linen Saree, Saree</p>
+      <button class="paypal rounded-pill p-2 ps-4 pe-4 ms-auto me-auto mt-3" ><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/PayPal.svg/124px-PayPal.svg.png?20210313113929" alt="" width="100px" class="ms-auto me-auto"></button>
+      <br><br><br> <br><br><br>
+    </div>
+  </div>
+  <style>
+    .fontf {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .btn0 {
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .btn0:hover {
+      opacity: 75%;
+    }
+
+    .quantity-input {
+      width: 100%;
+      text-align: center;
+      border: none;
+      outline: none;
+      user-select: none;
+    }
+
+    .add-to-cart-btn {
+      background-color: black;
+      cursor: pointer;
+      transition: 0.4s;
+      color: white;
+
+    }
+
+    .add-to-cart-btn:hover {
+      opacity: 70%;
+    }
+  
+    .paypal{
+      background-color: #FFC439;
+    color: black;
+    text-align: center;
+    width: 300px;
+    border-radius: 100px;
+    border: none;
+    
+}
+.paypal:hover{
+  opacity: 80%;
+}
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
+    crossorigin="anonymous"></script>
+  <script src="/assets/js/zoom-image.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script>
+    // Get all the necessary elements
+    const decrementBtn = document.querySelector('.decrement-btn');
+    const incrementBtn = document.querySelector('.increment-btn');
+    const quantityInput = document.querySelector('.quantity-input');
+    const addToCartBtn = document.querySelector('.add-to-cart-btn');
+
+    // Add event listeners to the buttons
+    decrementBtn.addEventListener('click', decrement);
+    incrementBtn.addEventListener('click', increment);
+    addToCartBtn.addEventListener('click', addToCart);
+
+    // Functions for incrementing and decrementing the quantity
+    function decrement() {
+      if (quantityInput.value > 0) {
+        quantityInput.value--;
+      }
+    }
+
+    function increment() {
+      quantityInput.value++;
+    }
+
+    // Function for adding the product to the cart
+    function addToCart() {
+
+      const quantity = parseInt(quantityInput.value);
+
+      // Here you can write the code to add the product to the cart
+      console.log(`Added ${quantity} to the cart`);
+      document.querySelector("#count").innerHTML = quantity
+    }
+
+  </script>
+</body>
+
+</html>
