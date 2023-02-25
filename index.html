@@ -46,6 +46,12 @@
       color: white;
     }
 
+    .colorgree {
+      background-color: #6e6c3c;
+      transition: 0.5s;
+      cursor: pointer;
+    }
+
     .b-img {
       background-image: url(assets/media/images/5.jpg);
       background-repeat: no-repeat;
@@ -92,11 +98,20 @@
       min-height: 600px;
       position: relative;
     }
+
+    .cros {
+      transform: rotate(45deg);
+    }
+
+    .hight {
+      height: 80px;
+    }
+
   </style>
 </head>
 
 <body>
-
+  
   <div class="container-fluid">
     <!-- black patti -->
     <div class="row bg-black linehight">
@@ -412,7 +427,7 @@
               </li>
 
               <li class="menu-category">
-                <a href="assets/parmlink/product page.html" class="menu-title">Product</a>
+                <a href="#" class="menu-title">Product</a>
 
                 <ul class="dropdown-list">
 
@@ -469,17 +484,37 @@
             style="width: 30;;height: 30;">
           </lord-icon>
         </a>
-        <button type="button" class=" position-relative">
-          <lord-icon src="https://cdn.lordicon.com/hyhnpiza.json" class="m-2" trigger="hover" style="width:30;height:30">
+        <button type="button" class=" position-relative" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+          <lord-icon src="https://cdn.lordicon.com/hyhnpiza.json" class="m-2" trigger="hover"
+            style="width:30;height:30">
           </lord-icon>
-          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="count" >
-           0
-            
+          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" id="count">
+            0
+
           </span>
+          
         </button>
         <lord-icon src="https://cdn.lordicon.com/medpcfcy.json" trigger="hover" class="m-2 d-none d-lg-none d-  "
           style="width:30;height:30">
         </lord-icon>
+      </div>
+    </div>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header">
+        
+        <p class="h5 text-dark mt-3">CART</p>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="alert alert-warning p-2" role="alert">
+          <i class="bi bi-bug"></i> <small class="ms-1"> Spend $6.00 more and get free shipping! </small>
+        </div>
+        <div class="col">
+          <img src="https://i.postimg.cc/g2k3wmKP/undraw-empty-cart-co35.png" alt="" class="img-fluid">
+        </div>
+        <p class="h6 text-center">Empty cart</p>
+        <li class="text-center text-muted">! oops please select the product</li>
+        
       </div>
     </div>
     <div class="modal fade" id="staticBackdrop" data-mdb-backdrop="static" data-mdb-keyboard="false" tabindex="-1"
@@ -512,37 +547,45 @@
 
         </div>
       </div>
-    </div>
-
-<div class="container-fluid">
-  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="margin-left: -20px; margin-right: -20px; overflow: hidden;">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
       
     </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="https://cdn.shopify.com/s/files/1/0054/0567/1479/files/slider2_67a71704-1fbe-4ce4-99bc-3135d95a446f.png?v=1614320343" class="d-block w-100" alt="...">
-        <div class="carousel-caption  d-md-block" id="c1">
-          <h5 class="slider-heading1">T-Shirt</h5>
-          <h2 class="slider-heading2">Man's <br><span style="color: black;">Fashion!</span></h2>
-          <h5>500+ Deals on Yashvee and Nevils showroom</h5>
-          <button type="button" class="btn btn-primary mt-3 slider_btn" class="">Shop Now</button>
+
+    <div class="container-fluid">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel"
+        style="margin-left: -20px; margin-right: -20px; overflow: hidden;">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
 
         </div>
-      </div>
-      <div class="carousel-item">
-        <img src="https://cdn.shopify.com/s/files/1/0054/0567/1479/files/slider1_895b4217-1e05-4a42-abbe-ec7a38db855d.png?v=1614320343" class="d-block w-100" alt="...">
-        <div class="carousel-caption2  d-md-block" id="c1">
-          <h5 class="slider-heading1">Spring</h5>
-          <h2 class="slider-heading2">Trandy <br><span style="color: black;">Fashion!</span></h2>
-          <h5>500+ Deals on Yashvee and Nevils showroom</h5>
-          <button type="button" class="btn btn-primary mt-3 slider_btn" class="">Shop Now</button>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0054/0567/1479/files/slider2_67a71704-1fbe-4ce4-99bc-3135d95a446f.png?v=1614320343"
+              class="d-block w-100" alt="...">
+            <div class="carousel-caption  d-md-block" id="c1">
+              <h5 class="slider-heading1">T-Shirt</h5>
+              <h2 class="slider-heading2">Man's <br><span style="color: black;">Fashion!</span></h2>
+              <h5>500+ Deals on Yashvee and Nevils showroom</h5>
+              <button type="button" class="btn btn-primary mt-3 slider_btn" class="">Shop Now</button>
 
-        </div>
-      </div>
-      <!-- <div class="carousel-item">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://cdn.shopify.com/s/files/1/0054/0567/1479/files/slider1_895b4217-1e05-4a42-abbe-ec7a38db855d.png?v=1614320343"
+              class="d-block w-100" alt="...">
+            <div class="carousel-caption2  d-md-block" id="c1">
+              <h5 class="slider-heading1">Spring</h5>
+              <h2 class="slider-heading2">Trandy <br><span style="color: black;">Fashion!</span></h2>
+              <h5>500+ Deals on Yashvee and Nevils showroom</h5>
+              <button type="button" class="btn btn-primary mt-3 slider_btn" class="">Shop Now</button>
+
+            </div>
+          </div>
+          <!-- <div class="carousel-item">
         <img src="https://cdn.shopify.com/s/files/1/0054/0567/1479/files/slider1_895b4217-1e05-4a42-abbe-ec7a38db855d.png?v=1614320343" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h3>Second slide label</h3>
@@ -550,21 +593,354 @@
           <h5>500+ Deals on Yashvee and Nevils showroom</h5>
         </div>
       </div> -->
-     
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
+    <div class="container-fluid mt-2 mb-2">
+      <div class="row">
+        <div class="col-12 col-lg-6 col-md-6 col-sm-12  d-flex justify-content-lg-end justify-content-center">
+
+          <img src="https://cdn.shopify.com/s/files/1/0054/0567/1479/files/aboutusbanner.png?v=1614316340" alt=""
+            class="img-fluid kbc shadow-sm ">
+
+        </div>
+        <div class="col-12 col-lg-6 col-md-6 col-sm-12 ">
+          <p class="h6" id="about">ALL ABOUT US</p>
+          <p class="h1" id="summer"> Summer Fashion</p>
+          <p class="lorem" id="img-lorem" style="margin-top: 13px;">Lorem ipsum
+            dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+          <p class="lorem" id="img-lorem">tempor
+            incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse</p>
+          <p class="lorem" id="img-lorem">ultrices
+            gravida. Risus commodo viverra maecenas accumsan lacus vel</p>
+          <p class="lorem" id="img-lorem">
+            facilisis.</p>
+          <p class="lorem" id="img-lorem">Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+          <p class="lorem" id="img-lorem">tempor
+            incididunt ut labore .</p>
+          <button class="read-more m-3">READ MORE</button>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
+  <div class="button-and-text mt-3  ">
+    <p class="h2 text-center">TOP PRODUCTS</p>
+    <div class="col d-flex flex-column flex-lg-row  flex-md-row flex-sm-row justify-content-center p-3 p-lg-0 p-sm-0 ">
+      <button class="p-2 rounded-pill  ps-4 m-2 pe-4 colorgree">FEATURED</button>
+      <button class="p-2 rounded-pill  ps-4 m-2 pe-4 border ">NEW ARRIVALS</button>
+      <button class="p-2 rounded-pill  ps-4 m-2 pe-4 border ">BEST SELLERS</button>
+    </div>
+  </div>
+  <!-- product-grid-part-*-*-*-*-*-*-*--*-----*-*-*-*-*-*-*-*-*-*-*-* -->
+  <div class="product-grid p-5">
+
+    <div class="showcase">
+
+      <div class="showcase-banner">
+
+        <img src="assets/media/images/products/jacket-3.jpg" alt="Mens Winter Leathers Jackets" width="300"
+          class="product-img default">
+        <img src="assets/media/images/products/jacket-4.jpg" alt="Mens Winter Leathers Jackets" width="300"
+          class="product-img hover">
+
+        <p class="showcase-badge">15%</p>
+
+        <div class="showcase-actions">
+
+          <button class="btn-action">
+            <i class="bi bi-heart" name="heart-outline"></i>
+
+          </button>
+
+          <button class="btn-action">
+            <i class="bi bi-eye" name="eye-outline"></i>
+
+          </button>
+
+          <button class="btn-action">
+            <i class="bi bi-repeat" name="repeat-outline"></i>
+
+          </button>
+
+          <button class="btn-action">
+            <a href="assets/parmlink/product page.html"><i class="bi bi-bag" name="bag-add-outline"></i></a>
+            
+
+          </button>
+
+        </div>
+
+      </div>
+
+      <div class="showcase-content">
+
+        <a href="#" class="showcase-category">jacket</a>
+
+        <a href="#">
+          <h3 class="showcase-title">Mens Winter Leathers Jackets</h3>
+        </a>
+
+        <div class="showcase-rating">
+          <i class="bi bi-star-fill" name="star"></i>
+          <i class="bi bi-star-fill" name="star"></i>
+          <i class="bi bi-star-fill" name="star"></i>
+          <i class="bi bi-star" name="star"></i>
+          <i class="bi bi-star" name="star"></i>
+        </div>
+
+        <div class="price-box">
+          <p class="price">$48.00</p>
+          <del>$75.00</del>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="showcase">
+
+      <div class="showcase-banner">
+        <img src="assets/media/images/products/shirt-1.jpg" alt="Pure Garment Dyed Cotton Shirt"
+          class="product-img default" width="300">
+        <img src="assets/media/images/products/shirt-2.jpg" alt="Pure Garment Dyed Cotton Shirt"
+          class="product-img hover" width="300">
+
+        <p class="showcase-badge angle black">sale</p>
+
+        <div class="showcase-actions">
+          <button class="btn-action">
+            <i class="bi bi-heart" name="heart-outline"></i>
+
+          </button>
+
+          <button class="btn-action">
+            <i class="bi bi-eye" name="eye-outline"></i>
+
+          </button>
+
+          <button class="btn-action">
+            <i class="bi bi-repeat" name="repeat-outline"></i>
+
+          </button>
+
+          <button class="btn-action">
+            <a href="assets/parmlink/product page -2.html"><i class="bi bi-bag" name="bag-add-outline"></i></a>
+
+          </button>
+
+        </div>
+      </div>
+
+      <div class="showcase-content">
+        <a href="#" class="showcase-category">shirt</a>
+
+        <h3>
+          <a href="#" class="showcase-title">Pure Garment Dyed Cotton Shirt</a>
+        </h3>
+
+        <div class="showcase-rating">
+          <i class="bi bi-star-fill" name="star"></i>
+          <i class="bi bi-star-fill" name="star"></i>
+          <i class="bi bi-star-fill" name="star"></i>
+          <i class="bi bi-star" name="star"></i>
+          <i class="bi bi-star" name="star"></i>
+        </div>
+
+        <div class="price-box">
+          <p class="price">$45.00</p>
+          <del>$56.00</del>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="showcase">
+
+      <div class="showcase-banner">
+        <img src="assets/media/images/products/jacket-5.jpg" alt="MEN Yarn Fleece Full-Zip Jacket"
+          class="product-img default" width="300">
+        <img src="assets/media/images/products/jacket-6.jpg" alt="MEN Yarn Fleece Full-Zip Jacket"
+          class="product-img hover" width="300">
+
+        <div class="showcase-actions">
+          <button class="btn-action">
+            <i class="bi bi-heart" name="heart-outline"></i>
+
+          </button>
+
+          <button class="btn-action">
+            <i class="bi bi-eye" name="eye-outline"></i>
+
+          </button>
+
+          <button class="btn-action">
+            <i class="bi bi-repeat" name="repeat-outline"></i>
+
+          </button>
+
+          <button class="btn-action">
+            <a href="assets/parmlink/product page - 3.html"><i class="bi bi-bag" name="bag-add-outline"></i></a>
+
+          </button>
+
+        </div>
+      </div>
+
+      <div class="showcase-content">
+        <a href="#" class="showcase-category">Jacket</a>
+
+        <h3>
+          <a href="#" class="showcase-title">MEN Yarn Fleece Full-Zip Jacket</a>
+        </h3>
+
+        <div class="showcase-rating">
+          <i class="bi bi-star-fill" name="star"></i>
+          <i class="bi bi-star-fill" name="star"></i>
+          <i class="bi bi-star-fill" name="star"></i>
+          <i class="bi bi-star" name="star"></i>
+          <i class="bi bi-star" name="star"></i>
+        </div>
+
+        <div class="price-box">
+          <p class="price">$58.00</p>
+          <del>$65.00</del>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="showcase">
+
+      <div class="showcase-banner">
+        <img src="assets/media/images/products/clothes-3.jpg" alt="Black Floral Wrap Midi Skirt"
+          class="product-img default" width="300">
+        <img src="assets/media/images/products/clothes-4.jpg" alt="Black Floral Wrap Midi Skirt"
+          class="product-img hover" width="300">
+
+        <p class="showcase-badge angle pink">new</p>
+
+        <div class="showcase-actions">
+          <button class="btn-action">
+            <i class="bi bi-heart" name="heart-outline"></i>
+
+          </button>
+
+          <button class="btn-action">
+            <i class="bi bi-eye" name="eye-outline"></i>
+
+          </button>
+
+          <button class="btn-action">
+            <i class="bi bi-repeat" name="repeat-outline"></i>
+
+          </button>
+
+          <button class="btn-action">
+            <a href="assets/parmlink/product page - 4.html"><i class="bi bi-bag" name="bag-add-outline"></i></a>
+
+          </button>
+
+        </div>
+      </div>
+
+      <div class="showcase-content">
+        <a href="#" class="showcase-category">skirt</a>
+
+        <h3>
+          <a href="#" class="showcase-title">Black Floral Wrap Midi Skirt</a>
+        </h3>
+
+        <div class="showcase-rating">
+          <i class="bi bi-star-fill" name="star"></i>
+          <i class="bi bi-star-fill" name="star"></i>
+          <i class="bi bi-star-fill" name="star"></i>
+          <i class="bi bi-star" name="star"></i>
+          <i class="bi bi-star" name="star"></i>
+        </div>
+
+        <div class="price-box">
+          <p class="price">$25.00</p>
+          <del>$35.00</del>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- shoose image -->
+
+
+  <div class="container-fluid ">
+    <section id="hero1" class="hero">
+      <div class="inner d-flex justify-content-center align-items-center ">
+        <div class="copy ">
+          <div class="col p-5 shadow-sm rounded" style=" background-color: #f5f1ebaf;">
+
+            <p class="h3 colork fw-light">For The Best</p>
+            <p class="h1 text-dark fs-1">Discount Sale</p>
+            <p class="h5 colork text-muted fw-bold">The Big Offer Day Extra 10% Off</p>
+            <p class="h6 text-muted">Offer only 5 days!</p>
+            <div class="col ms-auto me-auto" style="width: 200px;">
+              <button class="sign-btn text-white rounded-pill p-2">VIEW COLLECTION</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- 3box -->
+    <doiv class="row d-none d-lg-flex m-0 ms-auto me-auto mt-3 mb-3">
+      <div class="col p-2">
+        <div
+          class="col border d-flex  flex-column justify-content-center align-items-center bg-white opacity-75 shadow-sm ">
+          <lord-icon src="https://cdn.lordicon.com/qznlhdss.json" trigger="hover" class="m-2"
+            style="width:40px;height:40px">
+          </lord-icon>
+          <p class="h6">ORDERED BEFORE 16:00</p>
+          <small class="text-muted">Next bussiness day at home</small>
+        </div>
+      </div>
+      <div class="col p-2">
+        <div
+          class="col border d-flex flex-column justify-content-center align-items-center bg-white opacity-75 shadow-sm">
+          <lord-icon src="https://cdn.lordicon.com/jsoeastu.json" trigger="hover" class="m-2"
+            style="width:40px;height:40px">
+          </lord-icon>
+          <p class="h6">MONEY BACK</p>
+          <small class="text-muted">14 Days to change your mind</small>
+        </div>
+      </div>
+      <div class="col p-2">
+        <div
+          class="col border d-flex flex-column justify-content-center align-items-center bg-white opacity-75 shadow-sm">
+          <lord-icon src="https://cdn.lordicon.com/nhfyhmlt.json" trigger="hover" class="cros m-2"
+            style="width:40px;height:40px">
+          </lord-icon>
+          <p class="h6">1000 PRODUCT ADD</p>
+          <small class="text-muted">Products add everyday</small>
+        </div>
+      </div>
+    </doiv>
+
     <!-- black image -->
 
-    <div class="row b-img p-4 pt-5 pb-5">
+    <div class="row b-img p-4 pt-5 pb-5 m-0">
       <p class="h5 fst-italic fw-bold  d-flex justify-content-center text-white">CONNECT TO AVEDA & CO.</p>
       <p class="h1 d-flex justify-content-center text-white">Join Our Newsletter</p>
       <p class="h6 text-center text-white">Hey you, sign up it only takes a second to be the first to find out about our
@@ -578,320 +954,296 @@
         </div>
       </div>
     </div>
-  </div>
-  <!-- shoose image -->
+    <!-- new part -->
+    <footer>
 
+      <div class="footer-category">
 
-<div class="container-fluid p-0">
-  <section id="hero1" class="hero">
-    <div class="inner d-flex justify-content-center align-items-center ">
-      <div class="copy ">
-        <div class="col p-5 shadow-sm rounded" style=" background-color: #f5f1ebaf;">
+        <div class="container">
 
-          <p class="h3 colork fw-light">For The Best</p>
-          <p class="h1 text-dark fs-1">Discount Sale</p>
-          <p class="h5 colork text-muted fw-bold">The Big Offer Day Extra 10% Off</p>
-          <p class="h6 text-muted">Offer only 5 days!</p>
-          <div class="col ms-auto me-auto" style="width: 200px;">
-            <button class="sign-btn text-white rounded-pill p-2">VIEW COLLECTION</button>
+          <h2 class="footer-category-title">Brand directory</h2>
+
+          <div class="footer-category-box">
+
+            <h3 class="category-box-title">Fashion :</h3>
+
+            <a href="#" class="footer-category-link">T-shirt</a>
+            <a href="#" class="footer-category-link">Shirts</a>
+            <a href="#" class="footer-category-link">shorts & jeans</a>
+            <a href="#" class="footer-category-link">jacket</a>
+            <a href="#" class="footer-category-link">dress & frock</a>
+            <a href="#" class="footer-category-link">innerwear</a>
+            <a href="#" class="footer-category-link">hosiery</a>
+
           </div>
-        </div>
 
-      </div>
-    </div>
-  </section>
-  <!-- new part -->
-  <footer>
+          <div class="footer-category-box">
+            <h3 class="category-box-title">footwear :</h3>
 
-    <div class="footer-category">
+            <a href="#" class="footer-category-link">sport</a>
+            <a href="#" class="footer-category-link">formal</a>
+            <a href="#" class="footer-category-link">Boots</a>
+            <a href="#" class="footer-category-link">casual</a>
+            <a href="#" class="footer-category-link">cowboy shoes</a>
+            <a href="#" class="footer-category-link">safety shoes</a>
+            <a href="#" class="footer-category-link">Party wear shoes</a>
+            <a href="#" class="footer-category-link">Branded</a>
+            <a href="#" class="footer-category-link">Firstcopy</a>
+            <a href="#" class="footer-category-link">Long shoes</a>
+          </div>
 
-      <div class="container">
+          <div class="footer-category-box">
+            <h3 class="category-box-title">jewellery :</h3>
 
-        <h2 class="footer-category-title">Brand directory</h2>
+            <a href="#" class="footer-category-link">Necklace</a>
+            <a href="#" class="footer-category-link">Earrings</a>
+            <a href="#" class="footer-category-link">Couple rings</a>
+            <a href="#" class="footer-category-link">Pendants</a>
+            <a href="#" class="footer-category-link">Crystal</a>
+            <a href="#" class="footer-category-link">Bangles</a>
+            <a href="#" class="footer-category-link">bracelets</a>
+            <a href="#" class="footer-category-link">nosepin</a>
+            <a href="#" class="footer-category-link">chain</a>
+            <a href="#" class="footer-category-link">Earrings</a>
+            <a href="#" class="footer-category-link">Couple rings</a>
+          </div>
 
-        <div class="footer-category-box">
+          <div class="footer-category-box">
+            <h3 class="category-box-title">cosmetics :</h3>
 
-          <h3 class="category-box-title">Fashion :</h3>
+            <a href="#" class="footer-category-link">Shampoo</a>
+            <a href="#" class="footer-category-link">Bodywash</a>
+            <a href="#" class="footer-category-link">Facewash</a>
+            <a href="#" class="footer-category-link">makeup kit</a>
+            <a href="#" class="footer-category-link">liner</a>
+            <a href="#" class="footer-category-link">lipstick</a>
+            <a href="#" class="footer-category-link">prefume</a>
+            <a href="#" class="footer-category-link">Body soap</a>
+            <a href="#" class="footer-category-link">scrub</a>
+            <a href="#" class="footer-category-link">hair gel</a>
+            <a href="#" class="footer-category-link">hair colors</a>
+            <a href="#" class="footer-category-link">hair dye</a>
+            <a href="#" class="footer-category-link">sunscreen</a>
+            <a href="#" class="footer-category-link">skin loson</a>
+            <a href="#" class="footer-category-link">liner</a>
+            <a href="#" class="footer-category-link">lipstick</a>
+          </div>
 
-          <a href="#" class="footer-category-link">T-shirt</a>
-          <a href="#" class="footer-category-link">Shirts</a>
-          <a href="#" class="footer-category-link">shorts & jeans</a>
-          <a href="#" class="footer-category-link">jacket</a>
-          <a href="#" class="footer-category-link">dress & frock</a>
-          <a href="#" class="footer-category-link">innerwear</a>
-          <a href="#" class="footer-category-link">hosiery</a>
-
-        </div>
-
-        <div class="footer-category-box">
-          <h3 class="category-box-title">footwear :</h3>
-
-          <a href="#" class="footer-category-link">sport</a>
-          <a href="#" class="footer-category-link">formal</a>
-          <a href="#" class="footer-category-link">Boots</a>
-          <a href="#" class="footer-category-link">casual</a>
-          <a href="#" class="footer-category-link">cowboy shoes</a>
-          <a href="#" class="footer-category-link">safety shoes</a>
-          <a href="#" class="footer-category-link">Party wear shoes</a>
-          <a href="#" class="footer-category-link">Branded</a>
-          <a href="#" class="footer-category-link">Firstcopy</a>
-          <a href="#" class="footer-category-link">Long shoes</a>
-        </div>
-
-        <div class="footer-category-box">
-          <h3 class="category-box-title">jewellery :</h3>
-
-          <a href="#" class="footer-category-link">Necklace</a>
-          <a href="#" class="footer-category-link">Earrings</a>
-          <a href="#" class="footer-category-link">Couple rings</a>
-          <a href="#" class="footer-category-link">Pendants</a>
-          <a href="#" class="footer-category-link">Crystal</a>
-          <a href="#" class="footer-category-link">Bangles</a>
-          <a href="#" class="footer-category-link">bracelets</a>
-          <a href="#" class="footer-category-link">nosepin</a>
-          <a href="#" class="footer-category-link">chain</a>
-          <a href="#" class="footer-category-link">Earrings</a>
-          <a href="#" class="footer-category-link">Couple rings</a>
-        </div>
-
-        <div class="footer-category-box">
-          <h3 class="category-box-title">cosmetics :</h3>
-
-          <a href="#" class="footer-category-link">Shampoo</a>
-          <a href="#" class="footer-category-link">Bodywash</a>
-          <a href="#" class="footer-category-link">Facewash</a>
-          <a href="#" class="footer-category-link">makeup kit</a>
-          <a href="#" class="footer-category-link">liner</a>
-          <a href="#" class="footer-category-link">lipstick</a>
-          <a href="#" class="footer-category-link">prefume</a>
-          <a href="#" class="footer-category-link">Body soap</a>
-          <a href="#" class="footer-category-link">scrub</a>
-          <a href="#" class="footer-category-link">hair gel</a>
-          <a href="#" class="footer-category-link">hair colors</a>
-          <a href="#" class="footer-category-link">hair dye</a>
-          <a href="#" class="footer-category-link">sunscreen</a>
-          <a href="#" class="footer-category-link">skin loson</a>
-          <a href="#" class="footer-category-link">liner</a>
-          <a href="#" class="footer-category-link">lipstick</a>
         </div>
 
       </div>
 
-    </div>
+      <div class="footer-nav">
 
-    <div class="footer-nav">
+        <div class="container">
 
-      <div class="container">
+          <ul class="footer-nav-list">
 
-        <ul class="footer-nav-list">
+            <li class="footer-nav-item">
+              <h2 class="nav-title">Popular Categories</h2>
+            </li>
 
-          <li class="footer-nav-item">
-            <h2 class="nav-title">Popular Categories</h2>
-          </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Fashion</a>
+            </li>
 
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Fashion</a>
-          </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Electronic</a>
+            </li>
 
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Electronic</a>
-          </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Cosmetic</a>
+            </li>
 
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Cosmetic</a>
-          </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Health</a>
+            </li>
 
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Health</a>
-          </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Watches</a>
+            </li>
 
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Watches</a>
-          </li>
+          </ul>
 
-        </ul>
+          <ul class="footer-nav-list">
 
-        <ul class="footer-nav-list">
+            <li class="footer-nav-item">
+              <h2 class="nav-title">Products</h2>
+            </li>
 
-          <li class="footer-nav-item">
-            <h2 class="nav-title">Products</h2>
-          </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Prices drop</a>
+            </li>
 
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Prices drop</a>
-          </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">New products</a>
+            </li>
 
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">New products</a>
-          </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Best sales</a>
+            </li>
 
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Best sales</a>
-          </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Contact us</a>
+            </li>
 
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Contact us</a>
-          </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Sitemap</a>
+            </li>
 
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Sitemap</a>
-          </li>
+          </ul>
 
-        </ul>
+          <ul class="footer-nav-list">
 
-        <ul class="footer-nav-list">
+            <li class="footer-nav-item">
+              <h2 class="nav-title">Our Company</h2>
+            </li>
 
-          <li class="footer-nav-item">
-            <h2 class="nav-title">Our Company</h2>
-          </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Delivery</a>
+            </li>
 
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Delivery</a>
-          </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Legal Notice</a>
+            </li>
 
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Legal Notice</a>
-          </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Terms and conditions</a>
+            </li>
 
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Terms and conditions</a>
-          </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">About us</a>
+            </li>
 
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">About us</a>
-          </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Secure payment</a>
+            </li>
 
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Secure payment</a>
-          </li>
+          </ul>
 
-        </ul>
+          <ul class="footer-nav-list">
 
-        <ul class="footer-nav-list">
+            <li class="footer-nav-item">
+              <h2 class="nav-title">Services</h2>
+            </li>
 
-          <li class="footer-nav-item">
-            <h2 class="nav-title">Services</h2>
-          </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Prices drop</a>
+            </li>
 
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Prices drop</a>
-          </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">New products</a>
+            </li>
 
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">New products</a>
-          </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Best sales</a>
+            </li>
 
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Best sales</a>
-          </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Contact us</a>
+            </li>
 
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Contact us</a>
-          </li>
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">Sitemap</a>
+            </li>
 
-          <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Sitemap</a>
-          </li>
+          </ul>
 
-        </ul>
+          <ul class="footer-nav-list">
 
-        <ul class="footer-nav-list">
+            <li class="footer-nav-item">
+              <h2 class="nav-title">Contact</h2>
+            </li>
 
-          <li class="footer-nav-item">
-            <h2 class="nav-title">Contact</h2>
-          </li>
+            <li class="footer-nav-item flex">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
 
-          <li class="footer-nav-item flex">
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
+              <address class="content">
+                419 State 414 Rte
+                Beaver Dams, New York(NY), 14812, USA
+              </address>
+            </li>
 
-            <address class="content">
-              419 State 414 Rte
-              Beaver Dams, New York(NY), 14812, USA
-            </address>
-          </li>
+            <li class="footer-nav-item flex">
+              <div class="icon-box">
+                <ion-icon name="call-outline"></ion-icon>
+              </div>
 
-          <li class="footer-nav-item flex">
-            <div class="icon-box">
-              <ion-icon name="call-outline"></ion-icon>
-            </div>
+              <a href="tel:+607936-8058" class="footer-nav-link">(607) 936-8058</a>
+            </li>
 
-            <a href="tel:+607936-8058" class="footer-nav-link">(607) 936-8058</a>
-          </li>
+            <li class="footer-nav-item flex">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
 
-          <li class="footer-nav-item flex">
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
+              <a href="mailto:example@gmail.com" class="footer-nav-link">example@gmail.com</a>
+            </li>
 
-            <a href="mailto:example@gmail.com" class="footer-nav-link">example@gmail.com</a>
-          </li>
+          </ul>
 
-        </ul>
+          <ul class="footer-nav-list">
 
-        <ul class="footer-nav-list">
+            <li class="footer-nav-item">
+              <h2 class="nav-title">Follow Us</h2>
+            </li>
 
-          <li class="footer-nav-item">
-            <h2 class="nav-title">Follow Us</h2>
-          </li>
+            <li>
+              <ul class="social-link">
 
-          <li>
-            <ul class="social-link">
+                <li class="footer-nav-item">
+                  <a href="#" class="footer-nav-link">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
 
-              <li class="footer-nav-item">
-                <a href="#" class="footer-nav-link">
-                  <ion-icon name="logo-facebook"></ion-icon>
-                </a>
-              </li>
+                <li class="footer-nav-item">
+                  <a href="#" class="footer-nav-link">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                  </a>
+                </li>
 
-              <li class="footer-nav-item">
-                <a href="#" class="footer-nav-link">
-                  <ion-icon name="logo-twitter"></ion-icon>
-                </a>
-              </li>
+                <li class="footer-nav-item">
+                  <a href="#" class="footer-nav-link">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                  </a>
+                </li>
 
-              <li class="footer-nav-item">
-                <a href="#" class="footer-nav-link">
-                  <ion-icon name="logo-linkedin"></ion-icon>
-                </a>
-              </li>
+                <li class="footer-nav-item">
+                  <a href="#" class="footer-nav-link">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
 
-              <li class="footer-nav-item">
-                <a href="#" class="footer-nav-link">
-                  <ion-icon name="logo-instagram"></ion-icon>
-                </a>
-              </li>
+              </ul>
+            </li>
 
-            </ul>
-          </li>
+          </ul>
 
-        </ul>
-
-      </div>
-
-    </div>
-
-    <div class="footer-bottom">
-
-      <div class="container">
-
-        <img src="images/payment.png" alt="payment method" class="payment-img">
-
-        <p class="copyright">
-          Copyright &copy; <a href="#">Avada</a> all rights reserved.
-        </p>
+        </div>
 
       </div>
 
-    </div>
+      <div class="footer-bottom">
 
-  </footer>
+        <div class="container">
 
-</div>
+          <img src="assets/media/images/payment.png" alt="payment method" class="payment-img">
 
+          <p class="copyright">
+            Copyright &copy; <a href="#">Avada</a> all rights reserved.
+          </p>
 
+        </div>
 
+      </div>
+
+    </footer>
+
+  </div>
+  
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
@@ -900,6 +1252,7 @@
   <!-- ------- -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.1.0/mdb.min.js"></script>
   <script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+  <script src="assets/js/index.js"></script>
 </body>
 
 </html>
